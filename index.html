@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Mamsky</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <audio id="background-music" loop>
+        <source src="Audio/hbd.mp3" type="audio/mpeg">
+        Browser Tidak Mendukung Untuk Memutar Musik.
+    </audio>
+    <header>
+        <div class="logo"> Mamsky™ </div>
+        <nav>
+            <a href="#section1"> (づ￣ 3￣)づ </a> |
+            <a href="#section2"> Σ(っ °Д °;)っ </a> |
+            <a href="https://animated-flowers-css.vercel.app/" target="_blank">
+                <button> ( •̀ .̫ •́ )✧ </button>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section id="section1" class="hero" data-aos="fade-up">
+            <h1> HAPPY BIRTHDAY MAMA AYYA </h1>
+            <div class="start-button">
+                <p> WISH YOU ALL THE BEST </p>
+            </div>
+            <div class="anime-images">
+                <a href="https://animated-flowers-css.vercel.app/" target="_blank">
+                    <div class="anime-image" data-aos="fade-right">
+                        <img src="Images/Cover.jpg" alt="Anime Character 1">
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="section2" class="app-info" data-aos="fade-up">
+            <h2> YOU ARE THE QUEEN </h2>
+            <p> Dont Worry, You Are Not Old Yet. </p><br>
+            <div class="container">
+                <div class="item item1" data-aos="zoom-in"><img src="Images/photo1.jpg" alt="Photo 1"></div>
+                <div class="item item2" data-aos="zoom-in"><img src="Images/photo2.jpg" alt="Photo 2"></div>
+                <div class="item item3" data-aos="zoom-in"><img src="Images/photo3.jpg" alt="Photo 3"></div>
+                <div class="item item4" data-aos="zoom-in"><img src="Images/photo4.jpg" alt="Photo 4"></div>
+                <div class="item item5" data-aos="zoom-in"><img src="Images/photo5.jpg" alt="Photo 5"></div>
+                <div class="item item6" data-aos="zoom-in"><img src="Images/photo6.jpg" alt="Photo 6"></div>
+                <div class="item item7" data-aos="zoom-in"><img src="Images/photo7.jpg" alt="Photo 7"></div>
+                <div class="item item8" data-aos="zoom-in"><img src="Images/photo8.jpg" alt="Photo 8"></div>
+                <div class="item item9" data-aos="zoom-in"><img src="Images/photo9.jpg" alt="Photo 9"></div>
+                <div class="item item10" data-aos="zoom-in"><img src="Images/photo10.jpg" alt="Photo 10"></div>
+            </div>
+        </section>
+
+        <footer>
+            <nav>
+                <a href="#section1"> Home </a>
+                <a href="#section2"> Gallery </a>
+            </nav>
+            <p>&copy; 2025 <b>Mamsky™</b> All rights reserved.</p>
+        </footer>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var audio = document.getElementById('background-music');
+            audio.play().catch(function (error) {
+                console.log('Autoplay was prevented. Click anywhere to play the audio.');
+                document.addEventListener('click', function () {
+                    audio.play();
+                }, {
+                    once: true
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
